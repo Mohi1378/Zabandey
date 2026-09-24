@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>اساتید | زبان دی</title>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <h2>زبان دی</h2>
+            <span>LANGUAGE ACADEMY</span>
+        </div>
+
+        <div class="student-mini-profile">
+            <div class="student-avatar">م</div>
+            <div>
+                <strong>مدیر آموزشگاه</strong>
+                <small>مدیریت سیستم</small>
+            </div>
+        </div>
+
+        <nav class="dashboard-menu">
+
+            <a href="admin-dashboard.html">
+                <span>⌂</span>
+                داشبورد
+            </a>
+
+            <a href="students.html">
+                <span>👥</span>
+                زبان‌آموزان
+            </a>
+
+            <a href="teachers.html" class="active">
+                <span>👩🏻‍🏫</span>
+                اساتید
+            </a>
+
+            <a href="#">
+                <span>📚</span>
+                دوره‌ها
+            </a>
+
+            <a href="#">
+                <span>🏫</span>
+                کلاس‌ها
+            </a>
+
+            <a href="#">
+                <span>🗓</span>
+                برنامه کلاسی
+            </a>
+
+            <a href="#">
+                <span>🎥</span>
+                کلاس‌های آنلاین
+            </a>
+
+            <a href="#">
+                <span>💳</span>
+                پرداخت‌ها
+            </a>
+
+            <a href="#">
+                <span>📊</span>
+                گزارش‌ها
+            </a>
+
+            <a href="#">
+                <span>⚙️</span>
+                تنظیمات
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="login.html">
+                <span>↪</span>
+                خروج از حساب
+            </a>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="dashboard-main">
+
+        <!-- TOPBAR -->
+        <header class="dashboard-topbar">
+
+            <div>
+                <span class="dashboard-label">مدیریت آموزشگاه</span>
+                <h1>اساتید</h1>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification-btn">
+                    🔔
+                </button>
+
+                <div class="topbar-profile">
+                    <div class="topbar-avatar">م</div>
+
+                    <div>
+                        <strong>مدیر آموزشگاه</strong>
+                        <small>مدیر سیستم</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE HEADER -->
+        <div class="page-header">
+
+            <div>
+                <span class="dashboard-label">مدیریت مدرسین</span>
+                <h2>اساتید آموزشگاه</h2>
+                <p>مدیریت اطلاعات و وضعیت اساتید زبان دی</p>
+            </div>
+
+            <a href="#" class="dashboard-primary-btn">
+                + افزودن استاد
+            </a>
+
+        </div>
+
+
+        <!-- TOOLS -->
+        <div class="teachers-tools">
+
+            <div class="search-box">
+                <span>🔍</span>
+                <input
+                    type="text"
+                    placeholder="جستجوی نام، ایمیل یا تخصص استاد..."
+                >
+            </div>
+
+            <select>
+                <option>همه تخصص‌ها</option>
+                <option>زبان انگلیسی</option>
+                <option>IELTS</option>
+                <option>زبان آلمانی</option>
+            </select>
+
+            <select>
+                <option>همه وضعیت‌ها</option>
+                <option>فعال</option>
+                <option>غیرفعال</option>
+            </select>
+
+        </div>
+
+
+        <!-- TABLE -->
+        <div class="teachers-table-card">
+
+            <div class="table-header">
+
+                <div>
+                    <span>TEACHERS</span>
+                    <h3>لیست اساتید</h3>
+                </div>
+
+                <button class="export-btn">
+                    ⇩ خروجی گرفتن
+                </button>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>استاد</th>
+                            <th>ایمیل</th>
+                            <th>تخصص</th>
+                            <th>تعداد کلاس</th>
+                            <th>وضعیت</th>
+                            <th>عملیات</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <div class="table-user">
+
+                                    <div class="table-avatar">
+                                        س
+                                    </div>
+
+                                    <div>
+                                        <strong>سارا احمدی</strong>
+                                        <small>کد استاد: T001</small>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                sara@example.com
+                            </td>
+
+                            <td>
+                                زبان انگلیسی
+                            </td>
+
+                            <td>
+                                ۴ کلاس
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    فعال
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="table-actions">
+
+                                    <button title="مشاهده">
+                                        👁
+                                    </button>
+
+                                    <button title="ویرایش">
+                                        ✏️
+                                    </button>
+
+                                    <button title="حذف">
+                                        🗑
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div class="table-user">
+
+                                    <div class="table-avatar">
+                                        م
+                                    </div>
+
+                                    <div>
+                                        <strong>مریم رضایی</strong>
+                                        <small>کد استاد: T002</small>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                maryam@example.com
+                            </td>
+
+                            <td>
+                                IELTS
+                            </td>
+
+                            <td>
+                                ۳ کلاس
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    فعال
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="table-actions">
+
+                                    <button title="مشاهده">
+                                        👁
+                                    </button>
+
+                                    <button title="ویرایش">
+                                        ✏️
+                                    </button>
+
+                                    <button title="حذف">
+                                        🗑
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div class="table-user">
+
+                                    <div class="table-avatar">
+                                        ع
+                                    </div>
+
+                                    <div>
+                                        <strong>علی محمدی</strong>
+                                        <small>کد استاد: T003</small>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                ali@example.com
+                            </td>
+
+                            <td>
+                                زبان آلمانی
+                            </td>
+
+                            <td>
+                                ۲ کلاس
+                            </td>
+
+                            <td>
+                                <span class="status inactive">
+                                    غیرفعال
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="table-actions">
+
+                                    <button title="مشاهده">
+                                        👁
+                                    </button>
+
+                                    <button title="ویرایش">
+                                        ✏️
+                                    </button>
+
+                                    <button title="حذف">
+                                        🗑
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div class="table-user">
+
+                                    <div class="table-avatar">
+                                        ن
+                                    </div>
+
+                                    <div>
+                                        <strong>نگار محمدی</strong>
+                                        <small>کد استاد: T004</small>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                negar@example.com
+                            </td>
+
+                            <td>
+                                زبان انگلیسی
+                            </td>
+
+                            <td>
+                                ۵ کلاس
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    فعال
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="table-actions">
+
+                                    <button title="مشاهده">
+                                        👁
+                                    </button>
+
+                                    <button title="ویرایش">
+                                        ✏️
+                                    </button>
+
+                                    <button title="حذف">
+                                        🗑
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+
+                <button>‹</button>
+
+                <button class="current">
+                    ۱
+                </button>
+
+                <button>
+                    ۲
+                </button>
+
+                <button>
+                    ۳
+                </button>
+
+                <span>...</span>
+
+                <button>
+                    ۸
+                </button>
+
+                <button>›</button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

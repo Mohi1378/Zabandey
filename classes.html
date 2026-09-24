@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>کلاس‌ها | زبان دی</title>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <h2>زبان دی</h2>
+            <span>LANGUAGE ACADEMY</span>
+        </div>
+
+        <div class="student-mini-profile">
+            <div class="student-avatar">م</div>
+
+            <div>
+                <strong>مدیر آموزشگاه</strong>
+                <small>مدیریت سیستم</small>
+            </div>
+        </div>
+
+        <nav class="dashboard-menu">
+
+            <a href="admin-dashboard.html">
+                <span>⌂</span>
+                داشبورد
+            </a>
+
+            <a href="students.html">
+                <span>👥</span>
+                زبان‌آموزان
+            </a>
+
+            <a href="teachers.html">
+                <span>👩🏻‍🏫</span>
+                اساتید
+            </a>
+
+            <a href="courses.html">
+                <span>📚</span>
+                دوره‌ها
+            </a>
+
+            <a href="classes.html" class="active">
+                <span>🏫</span>
+                کلاس‌ها
+            </a>
+
+            <a href="#">
+                <span>🗓</span>
+                برنامه کلاسی
+            </a>
+
+            <a href="#">
+                <span>🎥</span>
+                کلاس‌های آنلاین
+            </a>
+
+            <a href="#">
+                <span>💳</span>
+                پرداخت‌ها
+            </a>
+
+            <a href="#">
+                <span>📊</span>
+                گزارش‌ها
+            </a>
+
+            <a href="#">
+                <span>⚙️</span>
+                تنظیمات
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="login.html">
+                <span>↪</span>
+                خروج از حساب
+            </a>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="dashboard-main">
+
+        <!-- TOPBAR -->
+        <header class="dashboard-topbar">
+
+            <div>
+                <span class="dashboard-label">مدیریت آموزشگاه</span>
+                <h1>کلاس‌ها</h1>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification-btn">
+                    🔔
+                </button>
+
+                <div class="topbar-profile">
+
+                    <div class="topbar-avatar">
+                        م
+                    </div>
+
+                    <div>
+                        <strong>مدیر آموزشگاه</strong>
+                        <small>مدیر سیستم</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE HEADER -->
+        <div class="page-header">
+
+            <div>
+                <span class="dashboard-label">مدیریت کلاس‌ها</span>
+
+                <h2>کلاس‌های آموزشگاه</h2>
+
+                <p>
+                    ایجاد کلاس، تعیین استاد، زبان‌آموزان و برنامه کلاس
+                </p>
+            </div>
+
+            <a href="#" class="dashboard-primary-btn">
+                + افزودن کلاس
+            </a>
+
+        </div>
+
+
+        <!-- STATS -->
+        <div class="dashboard-stats">
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    🏫
+                </div>
+
+                <div>
+                    <span>کل کلاس‌ها</span>
+                    <strong>۱۸</strong>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <span>کلاس‌های فعال</span>
+                    <strong>۱۴</strong>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    🎥
+                </div>
+
+                <div>
+                    <span>کلاس آنلاین</span>
+                    <strong>۵</strong>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    👥
+                </div>
+
+                <div>
+                    <span>زبان‌آموزان</span>
+                    <strong>۲۵۰</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOOLS -->
+        <div class="classes-tools">
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    placeholder="جستجوی نام کلاس یا استاد..."
+                >
+
+            </div>
+
+
+            <select>
+
+                <option>همه دوره‌ها</option>
+
+                <option>مکالمه انگلیسی</option>
+
+                <option>آمادگی IELTS</option>
+
+                <option>زبان آلمانی</option>
+
+            </select>
+
+
+            <select>
+
+                <option>همه وضعیت‌ها</option>
+
+                <option>فعال</option>
+
+                <option>تکمیل شده</option>
+
+                <option>لغو شده</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- CLASSES TABLE -->
+        <div class="classes-table-card">
+
+            <div class="table-header">
+
+                <div>
+                    <span>CLASSES</span>
+                    <h3>لیست کلاس‌ها</h3>
+                </div>
+
+                <button class="export-btn">
+                    ⇩ خروجی گرفتن
+                </button>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>کلاس</th>
+                            <th>دوره</th>
+                            <th>استاد</th>
+                            <th>زمان</th>
+                            <th>ظرفیت</th>
+                            <th>نوع</th>
+                            <th>وضعیت</th>
+                            <th>عملیات</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- CLASS 1 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="table-user">
+
+                                    <div class="table-avatar">
+                                        A1
+                                    </div>
+
+                                    <div>
+                                        <strong>انگلیسی A1</strong>
+                                        <small>کد کلاس: C001</small>
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                مکالمه انگلیسی
+                            </td>
+
+                            <td>
+                                سارا احمدی
+                            </td>
+
+                            <td>
+                                شنبه و دوشنبه<br>
+                                ۱۸:۰۰
+                            </td>
+
+                            <td>
+                                ۱۲ / ۱۵
+                            </td>
+
+                            <td>
+                                <span class="class-type">
+                                    حضوری
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    فعال
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="table-actions">
+
+                                    <button title="مشاهده">
+                                        👁
+                                    </button>
+
+                                    <button title="ویرایش">
+                                        ✏️
+                                    </button>
+
+                                    <button title="حذف">
+                                        🗑
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- CLASS 2 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="table-user">
+
+                                    <div class="table-avatar">
+                                        IELTS
+                                    </div>
+
+                                    <div>
+                                        <strong>IELTS Academic</strong>
+                                        <small>کد کلاس: C002</small>
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                آمادگی IELTS
+                            </td>
+
+                            <td>
+                                مریم رضایی
+                            </td>
+
+                            <td>
+                                یکشنبه و سه‌شنبه<br>
+                                ۱۹:۰۰
+                            </td>
+
+                            <td>
+                                ۱۰ / ۱۲
+                            </td>
+
+                            <td>
+                                <span class="class-type online">
+                                    آنلاین
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    فعال
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="table-actions">
+
+                                    <button title="مشاهده">
+                                        👁
+                                    </button>
+
+                                    <button title="ویرایش">
+                                        ✏️
+                                    </button>
+
+                                    <button title="حذف">
+                                        🗑
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- CLASS 3 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="table-user">
+
+                                    <div class="table-avatar">
+                                        A2
+                                    </div>
+
+                                    <div>
+                                        <strong>آلمانی A2</strong>
+                                        <small>کد کلاس: C003</small>
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                زبان آلمانی
+                            </td>
+
+                            <td>
+                                علی محمدی
+                            </td>
+
+                            <td>
+                                شنبه و چهارشنبه<br>
+                                ۱۷:۰۰
+                            </td>
+
+                            <td>
+                                ۸ / ۱۵
+                            </td>
+
+                            <td>
+                                <span class="class-type">
+                                    حضوری
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    فعال
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="table-actions">
+
+                                    <button title="مشاهده">
+                                        👁
+                                    </button>
+
+                                    <button title="ویرایش">
+                                        ✏️
+                                    </button>
+
+                                    <button title="حذف">
+                                        🗑
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- CLASS 4 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="table-user">
+
+                                    <div class="table-avatar">
+                                        B1
+                                    </div>
+
+                                    <div>
+                                        <strong>انگلیسی B1</strong>
+                                        <small>کد کلاس: C004</small>
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                مکالمه انگلیسی
+                            </td>
+
+                            <td>
+                                نگار محمدی
+                            </td>
+
+                            <td>
+                                دوشنبه و پنجشنبه<br>
+                                ۱۶:۰۰
+                            </td>
+
+                            <td>
+                                ۱۵ / ۱۵
+                            </td>
+
+                            <td>
+                                <span class="class-type">
+                                    حضوری
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status inactive">
+                                    تکمیل شده
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="table-actions">
+
+                                    <button title="مشاهده">
+                                        👁
+                                    </button>
+
+                                    <button title="ویرایش">
+                                        ✏️
+                                    </button>
+
+                                    <button title="حذف">
+                                        🗑
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- PAGINATION -->
+
+            <div class="pagination">
+
+                <button>‹</button>
+
+                <button class="current">
+                    ۱
+                </button>
+
+                <button>
+                    ۲
+                </button>
+
+                <button>
+                    ۳
+                </button>
+
+                <span>...</span>
+
+                <button>
+                    ۵
+                </button>
+
+                <button>›</button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

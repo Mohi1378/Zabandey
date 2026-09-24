@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>دوره‌ها | زبان دی</title>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <h2>زبان دی</h2>
+            <span>LANGUAGE ACADEMY</span>
+        </div>
+
+        <div class="student-mini-profile">
+            <div class="student-avatar">م</div>
+
+            <div>
+                <strong>مدیر آموزشگاه</strong>
+                <small>مدیریت سیستم</small>
+            </div>
+        </div>
+
+        <nav class="dashboard-menu">
+
+            <a href="admin-dashboard.html">
+                <span>⌂</span>
+                داشبورد
+            </a>
+
+            <a href="students.html">
+                <span>👥</span>
+                زبان‌آموزان
+            </a>
+
+            <a href="teachers.html">
+                <span>👩🏻‍🏫</span>
+                اساتید
+            </a>
+
+            <a href="courses.html" class="active">
+                <span>📚</span>
+                دوره‌ها
+            </a>
+
+            <a href="#">
+                <span>🏫</span>
+                کلاس‌ها
+            </a>
+
+            <a href="#">
+                <span>🗓</span>
+                برنامه کلاسی
+            </a>
+
+            <a href="#">
+                <span>🎥</span>
+                کلاس‌های آنلاین
+            </a>
+
+            <a href="#">
+                <span>💳</span>
+                پرداخت‌ها
+            </a>
+
+            <a href="#">
+                <span>📊</span>
+                گزارش‌ها
+            </a>
+
+            <a href="#">
+                <span>⚙️</span>
+                تنظیمات
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="login.html">
+                <span>↪</span>
+                خروج از حساب
+            </a>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="dashboard-main">
+
+        <!-- TOPBAR -->
+        <header class="dashboard-topbar">
+
+            <div>
+                <span class="dashboard-label">مدیریت آموزشگاه</span>
+                <h1>دوره‌ها</h1>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification-btn">
+                    🔔
+                </button>
+
+                <div class="topbar-profile">
+
+                    <div class="topbar-avatar">
+                        م
+                    </div>
+
+                    <div>
+                        <strong>مدیر آموزشگاه</strong>
+                        <small>مدیر سیستم</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE HEADER -->
+        <div class="page-header">
+
+            <div>
+                <span class="dashboard-label">مدیریت دوره‌های آموزشی</span>
+
+                <h2>دوره‌ها</h2>
+
+                <p>
+                    ایجاد، ویرایش و مدیریت دوره‌های آموزشگاه زبان دی
+                </p>
+            </div>
+
+            <a href="#" class="dashboard-primary-btn">
+                + افزودن دوره
+            </a>
+
+        </div>
+
+
+        <!-- COURSE STATS -->
+        <div class="dashboard-stats">
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    📚
+                </div>
+
+                <div>
+                    <span>کل دوره‌ها</span>
+                    <strong>۱۲</strong>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <span>دوره‌های فعال</span>
+                    <strong>۹</strong>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    👥
+                </div>
+
+                <div>
+                    <span>زبان‌آموزان</span>
+                    <strong>۲۵۰</strong>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    🎓
+                </div>
+
+                <div>
+                    <span>اساتید</span>
+                    <strong>۳۵</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FILTERS -->
+        <div class="courses-tools">
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    placeholder="جستجوی نام دوره..."
+                >
+
+            </div>
+
+
+            <select>
+
+                <option>همه زبان‌ها</option>
+
+                <option>انگلیسی</option>
+
+                <option>آلمانی</option>
+
+                <option>فرانسوی</option>
+
+            </select>
+
+
+            <select>
+
+                <option>همه وضعیت‌ها</option>
+
+                <option>فعال</option>
+
+                <option>غیرفعال</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- COURSES -->
+        <div class="courses-grid">
+
+
+            <!-- COURSE 1 -->
+            <div class="course-management-card">
+
+                <div class="course-card-top">
+
+                    <div class="course-language">
+                        EN
+                    </div>
+
+                    <span class="status active">
+                        فعال
+                    </span>
+
+                </div>
+
+
+                <div class="course-card-content">
+
+                    <span class="course-category">
+                        زبان انگلیسی
+                    </span>
+
+                    <h3>
+                        مکالمه انگلیسی
+                    </h3>
+
+                    <p>
+                        آموزش مکالمه از سطح پایه تا پیشرفته
+                    </p>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <div>
+                        <span>مدت دوره</span>
+                        <strong>۳ ماه</strong>
+                    </div>
+
+                    <div>
+                        <span>زبان‌آموز</span>
+                        <strong>۴۸ نفر</strong>
+                    </div>
+
+                    <div>
+                        <span>کلاس‌ها</span>
+                        <strong>۳</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="course-card-bottom">
+
+                    <strong>
+                        ۲,۸۰۰,۰۰۰ تومان
+                    </strong>
+
+                    <div class="table-actions">
+
+                        <button title="مشاهده">
+                            👁
+                        </button>
+
+                        <button title="ویرایش">
+                            ✏️
+                        </button>
+
+                        <button title="حذف">
+                            🗑
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COURSE 2 -->
+            <div class="course-management-card">
+
+                <div class="course-card-top">
+
+                    <div class="course-language">
+                        IELTS
+                    </div>
+
+                    <span class="status active">
+                        فعال
+                    </span>
+
+                </div>
+
+
+                <div class="course-card-content">
+
+                    <span class="course-category">
+                        آزمون بین‌المللی
+                    </span>
+
+                    <h3>
+                        آمادگی IELTS
+                    </h3>
+
+                    <p>
+                        آمادگی کامل برای آزمون آیلتس
+                    </p>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <div>
+                        <span>مدت دوره</span>
+                        <strong>۴ ماه</strong>
+                    </div>
+
+                    <div>
+                        <span>زبان‌آموز</span>
+                        <strong>۳۶ نفر</strong>
+                    </div>
+
+                    <div>                        <span>کلاس‌ها</span>
+                        <strong>۲</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="course-card-bottom">
+
+                    <strong>
+                        ۴,۵۰۰,۰۰۰ تومان
+                    </strong>
+
+                    <div class="table-actions">
+
+                        <button title="مشاهده">
+                            👁
+                        </button>
+
+                        <button title="ویرایش">
+                            ✏️
+                        </button>
+
+                        <button title="حذف">
+                            🗑
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COURSE 3 -->
+            <div class="course-management-card">
+
+                <div class="course-card-top">
+
+                    <div class="course-language">
+                        DE
+                    </div>
+
+                    <span class="status active">
+                        فعال
+                    </span>
+
+                </div>
+
+
+                <div class="course-card-content">
+
+                    <span class="course-category">
+                        زبان آلمانی
+                    </span>
+
+                    <h3>
+                        زبان آلمانی
+                    </h3>
+
+                    <p>
+                        آموزش زبان آلمانی از سطح A1 تا B2
+                    </p>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <div>
+                        <span>مدت دوره</span>
+                        <strong>۶ ماه</strong>
+                    </div>
+
+                    <div>
+                        <span>زبان‌آموز</span>
+                        <strong>۲۹ نفر</strong>
+                    </div>
+
+                    <div>
+                        <span>کلاس‌ها</span>
+                        <strong>۲</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="course-card-bottom">
+
+                    <strong>
+                        ۳,۲۰۰,۰۰۰ تومان
+                    </strong>
+
+                    <div class="table-actions">
+
+                        <button title="مشاهده">
+                            👁
+                        </button>
+
+                        <button title="ویرایش">
+                            ✏️
+                        </button>
+
+                        <button title="حذف">
+                            🗑
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COURSE 4 -->
+            <div class="course-management-card">
+
+                <div class="course-card-top">
+
+                    <div class="course-language">
+                        EN
+                    </div>
+
+                    <span class="status inactive">
+                        غیرفعال
+                    </span>
+
+                </div>
+
+
+                <div class="course-card-content">
+
+                    <span class="course-category">
+                        زبان انگلیسی
+                    </span>
+
+                    <h3>
+                        انگلیسی کودکان
+                    </h3>
+
+                    <p>
+                        آموزش زبان انگلیسی ویژه کودکان
+                    </p>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <div>
+                        <span>مدت دوره</span>
+                        <strong>۳ ماه</strong>
+                    </div>
+
+                    <div>
+                        <span>زبان‌آموز</span>
+                        <strong>۱۸ نفر</strong>
+                    </div>
+
+                    <div>
+                        <span>کلاس‌ها</span>
+                        <strong>۱</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="course-card-bottom">
+
+                    <strong>
+                        ۲,۲۰۰,۰۰۰ تومان
+                    </strong>
+
+                    <div class="table-actions">
+
+                        <button title="مشاهده">
+                            👁
+                        </button>
+
+                        <button title="ویرایش">
+                            ✏️
+                        </button>
+
+                        <button title="حذف">
+                            🗑
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- PAGINATION -->
+        <div class="pagination">
+
+            <button>‹</button>
+
+            <button class="current">
+                ۱
+            </button>
+
+            <button>
+                ۲
+            </button>
+
+            <button>
+                ۳
+            </button>
+
+            <span>...</span>
+
+            <button>
+                ۶
+            </button>
+
+            <button>›</button>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
